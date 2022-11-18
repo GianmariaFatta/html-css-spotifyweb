@@ -9,27 +9,24 @@
 body{
     background-color: #141922;
     color: #dedede;
-    margin: 110px 10px
+    margin: 110px 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-main{
-    height:calc(100vh - 220px);
-    overflow-y: auto;
-    width: calc(100vw - 10px);
-    margin-right: 150px;
- 
+/* GENERAL */
+
+.flex{
+    display:flex;
 }
 
-header{
-    width: 100%;
-    height: 100px;
-    background-color: rgba(0, 0, 0, .4);
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 0;
-
+.no-item{
+    list-style-type: none;
 }
+
+
+/* .wrap{
+flex-wrap: wrap;
+} */
 
 footer{
     height: 100px;
@@ -39,17 +36,35 @@ footer{
     bottom:0;
     right: 0;
     z-index: 3;
-
 }
 
-.container{
+/* HEADER */
+
+
+header{
     width: 100%;
-    margin:0 auto;
-    border: 2px dashed darkred
+    height: 100px;
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    
+}
 
+.head-button{
+    padding: 10px 15px;
+    color: #fff;
+    border: 2px solid #fff; 
+    text-decoration: none;
+    border-radius: 25%;
+    position: absolute;
+    right:0;
+    top:30%
 
 }
 
+/* NAV */
 nav{
     height: 100%;
     width: 180px;
@@ -61,19 +76,81 @@ nav{
 
 }
 
-
-.flex{
-    display:flex;
-    justify-content: flex-end
-    ;
-}
-
 .col.dimension-nav{
-    width: 180px;
+    width: 190px;
     
 }
 
-.col{
+.col-content{
     width:calc(100% - 180px);
     padding:0 10px
 }
+
+/* MAIN */
+
+main{
+    height:calc(100vh - 220px);
+    overflow-y: auto;
+    width: calc(100vw - 10px);
+    margin-right: 150px;
+ 
+}
+
+.container{
+    width: 100%;
+    margin:0 auto;
+    border: 2px dashed darkred;
+
+}
+
+ main.row-main{
+    width: 100%;
+    border: 2px dashed purple;
+}
+
+.col-main{
+    width: calc(100% / 6);
+    border: 2px dashed gold;
+    min-height: 50px;
+    padding: 10px;
+}
+
+.row-main .card{
+    width: 100%;
+    min-height: 50px;
+    border: 2px dashed green;
+}
+
+
+
+/* FOOTER */
+
+
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width : 768px){
+    
+    .row-main.flex{
+        flex-wrap: wrap;
+     
+    }
+
+    .col-main{
+        width:25% ;
+    }
+    }
+
+
+
+    @media screen and (max-width : 500px){
+
+    
+        .col-main{
+            width:50%;
+        }
+
+
+
+    }
