@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
@@ -25,9 +26,9 @@
             </figure>
             <div>
                 <ul class="list-nav">
-                    <li>x</li>
-                    <li>y</li>
-                    <li>z</li>
+                    <li>Home</li>
+                    <li>Cerca</li>
+                    <li>La tua libreria</li>
                 </ul>
                 <div class="list-nav">
                     <h5>playlist</h5>
@@ -56,8 +57,8 @@
         <div class="col-content ">
         <div class="container">
             <div class="row-main cards ">
-                <ul class="flex no-item">
-                    <li>IN EVIDENZA</li>
+                <ul class="flex navigation">
+                    <li id="active">IN EVIDENZA</li>
                     <li>PODCAST</li>
                     <li>CLASIFICHE</li>
                     <li>GENERI E MOOD</li>
@@ -67,65 +68,85 @@
             </div>
             <div>
                 <h3>Recently Played</h3>
-            <div class="row-main cards cards flex ">
+            <div class="row-main cards  flex ">
                 <div class="col-main">
-                    <div class="card">
+                    <div class="card">  
+                        <img src="img/metal_lifting.jpg" alt="">
                     </div>
                     <h4>Title</h4>
                     <h5>Subtitle</h5>
                 </div>
                 <div class="col-main">
                     <div class="card">
+                        <img src="img/metal_lifting.jpg" alt="">
                     </div>
                     <h4>Title</h4>
                     <h5>Subtitle</h5>
                 </div>
                 <div class="col-main">
-                    <div class="card"></div>
+                    <div class="card">
+                        <img src="img/metal_lifting.jpg" alt="">
+                    </div>
                     <h4>Title</h4>
                     <h5>Subtitle</h5>
                 </div>
                 <div class="col-main">
-                    <div class="card"></div>
+                    <div class="card">
+                        <img src="img/metal_lifting.jpg" alt="">
+                    </div>
                     <h4>Title</h4>
                     <h5>Subtitle</h5>
                 </div>
                 <div class="col-main">
-                    <div class="card"></div>
+                    <div class="card">
+                        <img src="img/metal_lifting.jpg" alt="">
+                    </div>
                     <h4>Title</h4>
                     <h5>Subtitle</h5>
                 </div>
                 <div class="col-main">
-                    <div class="card"></div>
+                    <div class="card">
+                        <img src="img/metal_lifting.jpg" alt="">
+                    </div>
                     <h4>Title</h4>
                     <h5>Subtitle</h5>
                 </div>
             </div>
         </div>
-        <div>
+        <div class="categories">
             <h3>Creato per Jimmy</h3>
+            <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
             <div class="row-main cards flex ">
                 <div class="col-main">
                     <div class="card">
+                        <img src="img/metal_lifting.jpg" alt="">
                     </div>
                     <h4>Title</h4>
                     <h5>Subtitle</h5>
                 </div>
                 <div class="col-main">
-                    <div class="card"></div>
+                    <div class="card">
+                        <img src="img/metal_lifting.jpg" alt="">
+                    </div>
                     <h4>Title</h4>
                     <h5>Subtitle</h5>
             </div>
         </div>
-            <div>
+            <div class="categories">
                 <h3>Artisti più popolari</h3>
+                <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
             <div class="row-main cards flex ">
                 <div class="col-main">
-                    <div class="card">
+                    <div class="card pop">
+                        <img src="img/metal_lifting.jpg" alt="">
                     </div>
+                    <h4>Title</h4>
                 </div>
                 <div class="col-main">
-                    <div class="card"></div>
+                    <div class="card pop">
+                        <img src="img/metal_lifting.jpg" alt="">
+                    </div>
+                    <h4>Title</h4>
                 </div>
             </div>
          </div>
