@@ -25,6 +25,15 @@ body{
     max-width: 100%;
 } */
 
+h2{
+    font-size: 33px;
+    color: #fff;
+}
+
+.pointer{
+    cursor:pointer;
+}
+
 .end{
     justify-content: flex-end;
  
@@ -218,6 +227,23 @@ ul.navigation li{
 }
 
 
+.col-main .card{
+    position: relative;
+}
+
+
+
+.hover-play{
+position: absolute;
+right: 50%;
+top: 40%;
+transform: translate(50%);
+font-size: 25px;
+display: none;
+
+
+}
+
 /* FOOTER */
 
 
@@ -265,6 +291,7 @@ ul.navigation li{
     .row-foot-up-middle ul{
         width:100%;
         justify-content: space-between;
+        
     }
 
 .row-foot-up-middle{
@@ -272,6 +299,7 @@ ul.navigation li{
     height: 35px;
     width: 160px;
     border: 2px dashed white;
+   
 }
 
 .barr{
@@ -307,6 +335,36 @@ ul.navigation li{
 
 .details-track{
     font-size:10px;
+}
+
+
+
+/*HOVER*/
+
+ .card img:hover{
+    filter:brightness(50%);
+}
+
+.card:hover .hover-play{
+    display: inline;
+}
+
+.navigation li:hover{
+    color:#fff;
+}
+
+
+
+.head-button:hover{
+   transform: scale(1.2);
+}
+
+.list-nav li:hover{
+    color:#fff
+}
+
+.f-end :nth-child(odd):hover{
+    color:#fff
 }
 
 
